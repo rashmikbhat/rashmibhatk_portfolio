@@ -773,6 +773,41 @@ img {
   }
 }
 
+/* Hero Profile Image Effects */
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  position: relative;
+  z-index: 10;
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background: linear-gradient(45deg, #ff6ec7, #a0258b, #667eea, #ff6ec7);
+  border-radius: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  animation: rotate-gradient 3s linear infinite;
+  filter: blur(20px);
+}
+
+.hero-image:hover::before {
+  opacity: 0.7;
+}
+
+@keyframes rotate-gradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Centered Contact Form */
 .contact-form-centered {
   background: white;

@@ -100,8 +100,11 @@
           <a href="#contact" class="btn btn-outline border-2 border-[#a0258b] text-[#a0258b] hover:bg-[#a0258b] hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all hover:scale-105">Contact Me</a>
         </div>
       </div>
-      <div class="hero-image animate delay-1">
-        <img src="./assets/profile.jpeg" alt="Rashmi Bhat Kekanaje - Data Scientist" class="rounded-3xl shadow-2xl border-4 border-[#a0258b]" />
+      <div class="hero-image animate delay-1 relative">
+        <!-- Glowing background effect -->
+        <div class="absolute inset-0 bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 rounded-3xl blur-2xl opacity-50 animate-pulse"></div>
+        <!-- Profile image with enhanced styling -->
+        <img src="./assets/profile.jpeg" alt="Rashmi Bhat Kekanaje - Data Scientist" class="relative rounded-3xl shadow-2xl border-4 border-white hover:scale-105 transition-transform duration-500 hover:rotate-2" style="box-shadow: 0 20px 60px rgba(255, 110, 199, 0.6);" />
       </div>
     </div>
   </div>
