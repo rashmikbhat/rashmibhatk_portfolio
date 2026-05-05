@@ -688,7 +688,7 @@ img {
 
 /* Hero Name 3D Effect */
 .hero-name-3d {
-  color: #ffffff;
+  color: #ffffff !important;
   text-shadow:
     1px 1px 0 #ff6ec7,
     2px 2px 0 #ff5ebd,
@@ -699,6 +699,7 @@ img {
     7px 7px 10px rgba(255, 110, 199, 0.5),
     8px 8px 25px rgba(0, 0, 0, 0.3);
   letter-spacing: 0.02em;
+  -webkit-text-fill-color: #ffffff;
 }
 
 /* Timeline Styles */
