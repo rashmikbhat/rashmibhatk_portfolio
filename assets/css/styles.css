@@ -690,14 +690,14 @@ img {
 .hero-name-3d {
   color: #ffffff;
   text-shadow:
-    1px 1px 0 rgba(160, 37, 139, 0.8),
-    2px 2px 0 rgba(160, 37, 139, 0.7),
-    3px 3px 0 rgba(160, 37, 139, 0.6),
-    4px 4px 0 rgba(160, 37, 139, 0.5),
-    5px 5px 0 rgba(160, 37, 139, 0.4),
-    6px 6px 0 rgba(160, 37, 139, 0.3),
-    7px 7px 0 rgba(160, 37, 139, 0.2),
-    8px 8px 20px rgba(0, 0, 0, 0.5);
+    1px 1px 0 #ff6ec7,
+    2px 2px 0 #ff5ebd,
+    3px 3px 0 #ff4eb3,
+    4px 4px 0 #ff3ea9,
+    5px 5px 0 #ff2e9f,
+    6px 6px 0 #ff1e95,
+    7px 7px 10px rgba(255, 110, 199, 0.5),
+    8px 8px 25px rgba(0, 0, 0, 0.3);
   letter-spacing: 0.02em;
 }
 
