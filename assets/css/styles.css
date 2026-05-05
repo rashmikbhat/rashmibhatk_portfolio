@@ -756,3 +756,41 @@ img {
     margin-bottom: 2rem !important;
   }
 }
+
+/* Centered Contact Form */
+.contact-form-centered {
+  background: white;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 60px rgba(160, 37, 139, 0.2);
+}
+
+.contact-form-centered .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form-centered .form-control {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.contact-form-centered .form-control:focus {
+  outline: none;
+  border-color: #a0258b;
+  box-shadow: 0 0 0 3px rgba(160, 37, 139, 0.1);
+}
+
+.contact-form-centered textarea.form-control {
+  min-height: 150px;
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .contact-form-centered {
+    padding: 2rem;
+  }
+}
