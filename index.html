@@ -84,8 +84,9 @@
   <div class="container">
     <div class="hero-content">
       <div class="hero-text animate">
-        <h1 class="text-7xl md:text-9xl font-black text-[#a0258b] text-shadow-purple-lg mb-8">Hello, I'm <span class="block mt-4">Rashmi Bhat Kekanaje</span></h1>
-        <p class="text-2xl md:text-3xl mb-6">I'm <span class="typed-text text-white"></span></p>
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Hello, I'm</h1>
+        <h1 class="text-6xl md:text-8xl font-black text-[#a0258b] mb-8" style="line-height: 1.2;">Rashmi Bhat Kekanaje</h1>
+        <p class="text-2xl md:text-3xl mb-6 text-gray-200">I'm <span class="typed-text text-white"></span></p>
         <p class="text-lg md:text-xl leading-relaxed mb-4 text-gray-200">
           I'm a <strong>Data Scientist</strong> at Micron Technology with 3+ years building production ML systems at scale. With 5+ years of overall experience across semiconductors, telecom, and embedded systems, I specialize in LLM-powered solutions, real-time prediction systems, and forecasting tools adopted as core planning systems.
         </p>
@@ -148,101 +149,202 @@
     <p class="text-xl text-gray-300 max-w-3xl mx-auto">My professional journey and career achievements in the field of data science and machine learning</p>
   </div>
 
-  <div class="experience-container">
-    <!-- Micron Technology -->
-    <div class="experience-card">
-      <div class="experience-header">
-        <img src="assets/micron-logo-black-tm-rgb.png" alt="Micron Logo" class="company-logo" />
-        <div class="role-info">
-          <h3>Data Scientist</h3>
-          <div class="company-name">Micron Technology</div>
-          <div class="date-location">Sep 2022 – Present · Singapore</div>
+  <div class="timeline-container relative max-w-6xl mx-auto px-4">
+    <!-- Animated vertical timeline -->
+    <div class="timeline-line absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-white opacity-30 animate-timeline-grow" style="height: 100%;"></div>
+    <!-- Micron Technology - LEFT ALIGNED -->
+    <div class="timeline-item mb-16 relative">
+      <div class="timeline-content-left w-full md:w-[calc(50%-3rem)] md:pr-12 relative">
+        <div class="experience-card-timeline bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 hover:scale-105 relative">
+          <!-- Arrow pointing to logo -->
+          <span class="timeline-arrow-right hidden md:block"></span>
+
+          <!-- Card content -->
+          <div class="flex items-start gap-4 mb-4">
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-[#a0258b] mb-2">Data Scientist</h3>
+              <div class="text-lg font-semibold text-gray-700">Micron Technology</div>
+              <div class="text-sm text-gray-500 mt-1">Sep 2022 – Present · Singapore</div>
+            </div>
+          </div>
+
+          <!-- General Contributions -->
+          <ul class="space-y-2 text-gray-700 text-sm mb-4">
+            <li class="flex items-start">
+              <span class="text-[#a0258b] mr-2">▸</span>
+              <span><strong>Combined Impact: $300M+ annual value</strong> across inventory dashboards (lot tracking, hold lot, PRISM, eng wafer reuse).</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#a0258b] mr-2">▸</span>
+              <span><strong>AI/ML Leadership:</strong> Facilitate weekly AIML Cohort for entire STPG IE team, 1:1 mentoring on Snowflake, Tableau, ML scoping. Published Quick Reference Guide. Mentored 5 specially abled students (TAP 2025) on industry-ready projects.</span>
+            </li>
+          </ul>
+
+          <!-- PRISM AI Platform -->
+          <div class="border-l-4 border-[#a0258b] pl-4 mb-4">
+            <h4 class="text-lg font-bold text-gray-800 mb-2">PRISM AI Platform</h4>
+            <ul class="space-y-2 text-gray-700 text-sm">
+              <li class="flex items-start">
+                <span class="text-[#a0258b] mr-2">▸</span>
+                <span><em>Challenge:</em> High NPI wafer material unconsumed (~10%), creating COGS exposure. Data fragmentation across SAP, Snowflake, Global WIP made root-cause analysis difficult.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#a0258b] mr-2">▸</span>
+                <span><em>Solution:</em> Built PRISM AI—interactive web dashboard with Claude Sonnet 4 chatbot on AWS Bedrock for natural language inventory queries.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#a0258b] mr-2">▸</span>
+                <span><strong>Reduced</strong> unconsumed inventory by 30%, preventing significant COGS exposure.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Lot Tracking ML System -->
+          <div class="border-l-4 border-[#a0258b] pl-4 mb-4">
+            <h4 class="text-lg font-bold text-gray-800 mb-2">Lot Tracking ML System</h4>
+            <ul class="space-y-2 text-gray-700 text-sm">
+              <li class="flex items-start">
+                <span class="text-[#a0258b] mr-2">▸</span>
+                <span><strong>Engineered</strong> step-positioning feature encoding lot journey, achieving 87%+ accuracy on 15,000+ daily predictions.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#a0258b] mr-2">▸</span>
+                <span><strong>Deployed</strong> live Streamlit dashboard consolidating cross-site data into single source of truth.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Wafer Forecasting -->
+          <div class="border-l-4 border-[#a0258b] pl-4 mb-4">
+            <h4 class="text-lg font-bold text-gray-800 mb-2">Wafer Forecasting</h4>
+            <ul class="space-y-2 text-gray-700 text-sm">
+              <li class="flex items-start">
+                <span class="text-[#a0258b] mr-2">▸</span>
+                <span><strong>Achieved</strong> 90%+ accuracy with 40% cross-product improvement.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#a0258b] mr-2">▸</span>
+                <span><strong>Dashboard adopted</strong> by Business Units as core planning tool for revenue and assembly decisions.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Python</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">SQL</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Snowflake</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">AWS Bedrock</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Claude Sonnet 4</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">XGBoost</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Machine Learning</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Tableau</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Streamlit</span>
+          </div>
         </div>
       </div>
-      <!-- General Contributions -->
-      <ul class="experience-details">
-        <li><strong>Combined Impact: $300M+ annual value</strong> across inventory dashboards (lot tracking, hold lot, PRISM, eng wafer reuse).</li>
-        <li><strong>AI/ML Leadership:</strong> Facilitate weekly AIML Cohort for entire STPG IE team, 1:1 mentoring on Snowflake, Tableau, ML scoping. Published Quick Reference Guide. Mentored 5 specially abled students (TAP 2025) on industry-ready projects.</li>
-      </ul>
-      <!-- PRISM AI Platform -->
-      <div class="project-section">
-        <h4>PRISM AI Platform</h4>
-        <ul class="experience-details">
-          <li><em>Challenge:</em> High NPI wafer material unconsumed (~10%), creating COGS exposure. Data fragmentation across SAP, Snowflake, Global WIP made root-cause analysis difficult.</li>
-          <li><em>Solution:</em> Built PRISM AI—interactive web dashboard with Claude Sonnet 4 chatbot on AWS Bedrock for natural language inventory queries.</li>
-          <li><strong>Implemented</strong> VINTAGE-based demand-to-inventory matching engine for automated lot-to-demand linkage analysis.</li>
-          <li><strong>Enabled</strong> proactive intervention through conversational AI answering "Which demands to prioritize?", "Where is inventory stuck?", "What action to take?"</li>
-          <li><strong>Reduced</strong> unconsumed inventory by 30%, preventing significant COGS exposure.</li>
-        </ul>
-      </div>
 
-      <!-- Lot Tracking & Prediction System -->
-      <div class="project-section">
-        <h4>Lot Tracking ML System</h4>
-        <ul class="experience-details">
-          <li><em>Challenge:</em> Manual experience-based tracking with no prediction system for time-sensitive NPI lots.</li>
-          <li><em>Solution:</em> Built real-time prediction system replacing manual tracking processes.</li>
-          <li><strong>Engineered</strong> step-positioning feature encoding lot journey, achieving 87%+ accuracy on 15,000+ daily predictions.</li>
-          <li><strong>Deployed</strong> live Streamlit dashboard consolidating cross-site data into single source of truth.</li>
-          <li><strong>Proactively flags</strong> at-risk lots (On Track/Monitor/Off Track), enabling early intervention and reducing off-track lot IDs caught too late.</li>
-        </ul>
-      </div>
-
-      <!-- Wafer Forecasting -->
-      <div class="project-section">
-        <h4>Wafer Forecasting</h4>
-        <ul class="experience-details">
-          <li><em>Challenge:</em> Inaccurate internal forecasting tool impacting supply planning.</li>
-          <li><em>Solution:</em> Developed XGBoost+ARIMA hybrid replacing inaccurate internal tool—ARIMA captures time series patterns, XGBoost learns systematic deviations.</li>
-          <li><strong>Achieved</strong> 90%+ accuracy with 40% cross-product improvement.</li>
-          <li><strong>Dashboard adopted</strong> by Business Units as core planning tool for revenue and assembly decisions.</li>
-        </ul>
-      </div>
-
-
-      <div class="skills-tags">
-        <span>Python</span><span>SQL</span><span>Snowflake</span><span>AWS Bedrock</span><span>Claude Sonnet 4</span><span>XGBoost</span><span>Machine Learning</span><span>Tableau</span><span>Streamlit</span>
+      <!-- Company Logo on Timeline -->
+      <div class="timeline-dot absolute top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-white rounded-full p-2 shadow-lg z-10 hidden md:flex items-center justify-center">
+        <img src="assets/micron-logo-black-tm-rgb.png" alt="Micron Logo" class="w-full h-full object-contain" />
       </div>
     </div>
 
-    <!-- Lumen Technologies -->
-    <div class="experience-card">
-      <div class="experience-header">
-        <img src="assets/Lumen-logo-R.svg" alt="Lumen Logo" class="company-logo" />
-        <div class="role-info">
-          <h3>Software Engineer</h3>
-          <div class="company-name">Lumen Technologies</div>
-          <div class="date-location">Oct 2020 – Sep 2022 · India</div>
+    <!-- Lumen Technologies - RIGHT ALIGNED -->
+    <div class="timeline-item mb-16 relative">
+      <div class="timeline-content-right w-full md:w-[calc(50%-3rem)] md:pl-12 md:ml-auto relative">
+        <div class="experience-card-timeline bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 hover:scale-105 relative">
+          <!-- Arrow pointing to logo -->
+          <span class="timeline-arrow-left hidden md:block"></span>
+
+          <!-- Card content -->
+          <div class="flex items-start gap-4 mb-4">
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-[#a0258b] mb-2">Software Engineer</h3>
+              <div class="text-lg font-semibold text-gray-700">Lumen Technologies</div>
+              <div class="text-sm text-gray-500 mt-1">Oct 2020 – Sep 2022 · India</div>
+            </div>
+          </div>
+
+          <ul class="space-y-2 text-gray-700 text-sm mb-4">
+            <li class="flex items-start">
+              <span class="text-[#a0258b] mr-2">▸</span>
+              <span><strong>Developed and deployed</strong> a large-scale telecom order processing service using Java, SpringBoot, SQL, and MongoDB.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#a0258b] mr-2">▸</span>
+              <span><strong>Analyzed customer order patterns</strong> and resolved system bottlenecks, improving performance by 30%.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#a0258b] mr-2">▸</span>
+              <span><strong>Built CI/CD pipelines</strong> that improved software release reliability and reduced deployment time.</span>
+            </li>
+          </ul>
+
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Java</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">SpringBoot</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">SQL</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">MongoDB</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Data Analysis</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Performance Engineering</span>
+          </div>
         </div>
       </div>
-      <ul class="experience-details">
-        <li><strong>Developed and deployed</strong> a large-scale telecom order processing service using Java, SpringBoot, SQL, and MongoDB.</li>
-        <li><strong>Analyzed customer order patterns</strong> and resolved system bottlenecks, improving performance by 30%.</li>
-        <li><strong>Built CI/CD pipelines</strong> that improved software release reliability and reduced deployment time.</li>
-      </ul>
-      <div class="skills-tags">
-        <span>Java</span><span>SpringBoot</span><span>SQL</span><span>MongoDB</span><span>Data Analysis</span><span>Performance Engineering</span>
+
+      <!-- Company Logo on Timeline -->
+      <div class="timeline-dot absolute top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-white rounded-full p-2 shadow-lg z-10 hidden md:flex items-center justify-center">
+        <img src="assets/Lumen-logo-R.svg" alt="Lumen Logo" class="w-full h-full object-contain" />
       </div>
     </div>
 
-    <!-- ARM Embedded Technologies -->
-    <div class="experience-card">
-      <div class="experience-header">
-        <img src="assets/Arm_Brand_Logo_Guidelines_300x175px.svg" alt="ARM Logo" class="company-logo" />
-        <div class="role-info">
-          <h3>Software Development Intern</h3>
-          <div class="company-name">ARM Embedded Technologies</div>
-          <div class="date-location">Jan 2020 – Jun 2020 · India</div>
+    <!-- ARM Embedded Technologies - LEFT ALIGNED -->
+    <div class="timeline-item mb-16 relative">
+      <div class="timeline-content-left w-full md:w-[calc(50%-3rem)] md:pr-12 relative">
+        <div class="experience-card-timeline bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300 hover:scale-105 relative">
+          <!-- Arrow pointing to logo -->
+          <span class="timeline-arrow-right hidden md:block"></span>
+
+          <!-- Card content -->
+          <div class="flex items-start gap-4 mb-4">
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-[#a0258b] mb-2">Software Development Intern</h3>
+              <div class="text-lg font-semibold text-gray-700">ARM Embedded Technologies</div>
+              <div class="text-sm text-gray-500 mt-1">Jan 2020 – Jun 2020 · India</div>
+            </div>
+          </div>
+
+          <ul class="space-y-2 text-gray-700 text-sm mb-4">
+            <li class="flex items-start">
+              <span class="text-[#a0258b] mr-2">▸</span>
+              <span><strong>Designed and implemented internal CAD tools</strong> to check consistency across Physical IP configurations (Memory, Std-Cells).</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#a0258b] mr-2">▸</span>
+              <span><strong>Translated C to Java</strong> to validate interpolation logic used for simulation of timing, power, and leakage characteristics.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#a0258b] mr-2">▸</span>
+              <span><strong>Developed variation data mining tools</strong> that helped reduce simulation time, turnaround time (TAT), and CPU costs for memory designers.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#a0258b] mr-2">▸</span>
+              <span><strong>Ensured consistency</strong> of configuration settings for Physical IP delivery, reducing risk in final silicon tape-outs.</span>
+            </li>
+          </ul>
+
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Java</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">C</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Regression Framework</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Memory Characterization</span>
+            <span class="bg-purple-100 text-[#a0258b] px-3 py-1 rounded-full text-xs font-semibold">Simulation Analysis</span>
+          </div>
         </div>
       </div>
-      <ul class="experience-details">
-        <li><strong>Designed and implemented internal CAD tools</strong> to check consistency across Physical IP configurations (Memory, Std-Cells).</li>
-        <li><strong>Translated C to Java</strong> to validate interpolation logic used for simulation of timing, power, and leakage characteristics.</li>
-        <li><strong>Developed variation data mining tools</strong> that helped reduce simulation time, turnaround time (TAT), and CPU costs for memory designers.</li>
-        <li><strong>Ensured consistency</strong> of configuration settings for Physical IP delivery, reducing risk in final silicon tape-outs.</li>
-      </ul>
-      <div class="skills-tags">
-        <span>Java</span><span>C</span><span>Regression Framework</span><span>Memory Characterization</span><span>Simulation Analysis</span>
+
+      <!-- Company Logo on Timeline -->
+      <div class="timeline-dot absolute top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-white rounded-full p-2 shadow-lg z-10 hidden md:flex items-center justify-center">
+        <img src="assets/Arm_Brand_Logo_Guidelines_300x175px.svg" alt="ARM Logo" class="w-full h-full object-contain" />
       </div>
     </div>
   </div>
