@@ -6,8 +6,8 @@
   <title>Rashmi Bhat Kekanaje - Portfolio</title>
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Rashmi Bhat Kekanaje - Data Scientist at Micron Technology specializing in machine learning, predictive modeling, and data analytics. Explore my portfolio showcasing ML projects with 90%+ accuracy rates." />
-  <meta name="keywords" content="Data Scientist, Machine Learning, Python, SQL, TensorFlow, Data Analytics, Singapore, Portfolio" />
+  <meta name="description" content="Rashmi Bhat Kekanaje - Data Scientist with 3+ years building production ML systems delivering $300M+ annual impact. 5+ years overall experience. Specializing in LLMs, computer vision, and NLP. Pursuing M.S. in AI at NTU Singapore." />
+  <meta name="keywords" content="Data Scientist, Machine Learning, LLM, AWS Bedrock, Claude, Computer Vision, NLP, Python, Singapore, AI, M.S. Artificial Intelligence" />
   <meta name="author" content="Rashmi Bhat Kekanaje" />
 
   <!-- Open Graph -->
@@ -58,6 +58,7 @@
       <li class="nav-item"><a href="#home" class="nav-link">About</a></li>
       <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
       <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+      <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
       <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
       <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
@@ -71,10 +72,10 @@
         <h1>Hello, I'm <span>Rashmi Bhat Kekanaje</span></h1>
         <p>I'm <span class="typed-text"></span></p>
         <p>
-          I'm a <strong>Data Scientist</strong> at Micron Technology with 5+ years of experience across semiconductors, telecom, and embedded systems. I build machine learning solutions and dashboards that drive operational efficiency, inventory optimization, and strategic decisions.
+          I'm a <strong>Data Scientist</strong> at Micron Technology with 3+ years building production ML systems delivering $300M+ annual business impact. With 5+ years of overall experience across semiconductors, telecom, and embedded systems, I specialize in LLM-powered solutions, real-time prediction systems, and forecasting tools.
         </p>
         <p>
-          My work focuses on turning complex manufacturing data into actionable, business-ready insights—with a strong emphasis on usability, reliability, and real-world impact.
+          My work focuses on turning complex data into actionable insights—with a strong emphasis on usability, reliability, and real-world impact. I'm currently pursuing my <strong>M.S. in Artificial Intelligence</strong> at NTU Singapore (part-time).
         </p>
         <div class="hero-btns">
           <a href="#experience" class="btn">View My Work</a>
@@ -145,34 +146,46 @@
       </div>
       <!-- General Contributions -->
       <ul class="experience-details">
-        <li><strong>Enabled $300M in inventory optimization</strong> by designing Tableau dashboards that reduced 14+ hours of manual reporting weekly across engineering and planning teams.</li>
-        <li><strong>Mentored 5 specially abled interns</strong> through customized technical programs that improved inclusion and accelerated skill development.</li>
+        <li><strong>Combined Impact: $300M+ annual value</strong> across inventory dashboards (lot tracking, hold lot, PRISM, eng wafer reuse).</li>
+        <li><strong>AI/ML Leadership:</strong> Facilitate weekly AIML Cohort for entire STPG IE team, 1:1 mentoring on Snowflake, Tableau, ML scoping. Published Quick Reference Guide. Mentored 5 specially abled students (TAP 2025) on industry-ready projects.</li>
       </ul>
+      <!-- PRISM AI Platform -->
+      <div class="project-section">
+        <h4>PRISM AI Platform</h4>
+        <ul class="experience-details">
+          <li><em>Challenge:</em> Manual NPI inventory management with limited real-time analysis capabilities.</li>
+          <li><em>Solution:</em> Architected Claude Sonnet 4 LLM chatbot on AWS Bedrock for NPI inventory optimization.</li>
+          <li><strong>Designed</strong> Snowflake ETL pipeline for demand-to-inventory matching and real-time analysis.</li>
+          <li><strong>Reduced</strong> unconsumed inventory by 30%, preventing COGS exposure.</li>
+        </ul>
+      </div>
+
       <!-- Lot Tracking & Prediction System -->
       <div class="project-section">
-        <h4>Lot Tracking & Prediction System</h4>
+        <h4>Lot Tracking ML System</h4>
         <ul class="experience-details">
-          <li><em>Challenge:</em> Tedious manual lot tracking from multiple data sources, no prediction system, and hidden delays disrupting operations.</li>
-          <li><em>Solution:</em> Built a machine learning model pipeline using a sequence-aware Random Forest Regressor to predict lot completion times with 85% accuracy.</li>
-          <li><strong>Engineered</strong> step-positioning features using flow patterns, improving predictions by 25%.</li>
-          <li><strong>Deployed</strong> a real-time dashboard with risk classification, serving 5000+ lots daily across multiple Design IDs.</li>
-          <li><strong>Reduced</strong> dashboard query time from 55s to 3s using a multi-tier caching system and background refresh.</li>
+          <li><em>Challenge:</em> Manual experience-based tracking with no prediction system for time-sensitive NPI lots.</li>
+          <li><em>Solution:</em> Built real-time prediction system replacing manual tracking processes.</li>
+          <li><strong>Engineered</strong> step-positioning feature encoding lot journey, achieving 87%+ accuracy on 15,000+ daily predictions.</li>
+          <li><strong>Deployed</strong> live Streamlit dashboard consolidating cross-site data into single source of truth.</li>
+          <li><strong>Proactively flags</strong> at-risk lots (On Track/Monitor/Off Track), enabling early intervention and reducing off-track lot IDs caught too late.</li>
         </ul>
       </div>
 
-      <!-- Wafer Probe-Out Forecast Dashboard -->
+      <!-- Wafer Forecasting -->
       <div class="project-section">
-        <h4>Wafer Probe-Out Forecast Dashboard</h4>
+        <h4>Wafer Forecasting</h4>
         <ul class="experience-details">
-          <li><em>Challenge:</em> Inaccurate LPI forecasts impacted NAND supply planning and visibility.</li>
-          <li><em>Solution:</em> Developed regression models comparing LPI vs APO probe-out trends, improving inventory prediction accuracy by 40%.</li>
-          <li><strong>Built</strong> an interactive Streamlit dashboard for Business Units to identify revenue opportunities through better inventory visibility.</li>
+          <li><em>Challenge:</em> Inaccurate internal forecasting tool impacting supply planning.</li>
+          <li><em>Solution:</em> Developed XGBoost+ARIMA hybrid replacing inaccurate internal tool—ARIMA captures time series patterns, XGBoost learns systematic deviations.</li>
+          <li><strong>Achieved</strong> 90%+ accuracy with 40% cross-product improvement.</li>
+          <li><strong>Dashboard adopted</strong> by Business Units as core planning tool for revenue and assembly decisions.</li>
         </ul>
       </div>
 
-      
+
       <div class="skills-tags">
-        <span>Python</span><span>SQL</span><span>Data Science</span><span>Machine Learning</span><span>Tableau</span><span>Predictive Modeling</span><span>Streamlit</span>
+        <span>Python</span><span>SQL</span><span>Snowflake</span><span>AWS Bedrock</span><span>Claude Sonnet 4</span><span>XGBoost</span><span>Machine Learning</span><span>Tableau</span><span>Streamlit</span>
       </div>
     </div>
 
@@ -233,48 +246,80 @@
       <div class="skills-content">
         <div class="skill-card animate">
           <div class="skill-icon">
-            <i class="fas fa-brain"></i>
+            <i class="fas fa-robot"></i>
           </div>
-          <h3>Machine Learning & AI</h3>
-          <p>I develop predictive models and machine learning solutions to solve complex business problems.</p>
+          <h3>Machine Learning & LLMs</h3>
+          <p>I build production ML systems and LLM-powered solutions delivering measurable business impact.</p>
           <ul class="skill-list">
-            <li>Python & SQL</li>
-            <li>scikit-learn & TensorFlow</li>
-            <li>Statistical Modeling</li>
-            <li>Time Series Analysis</li>
-            <li>Neural Networks & CNNs</li>
-            <li>Predictive Analytics</li>
+            <li>Python & PyTorch</li>
+            <li>Scikit-learn & XGBoost</li>
+            <li>Claude Sonnet 4 & AWS Bedrock</li>
+            <li>LoRA & Adapters</li>
+            <li>Multi-agent Systems</li>
+            <li>ARIMA & Random Forest</li>
           </ul>
         </div>
         <div class="skill-card animate delay-1">
           <div class="skill-icon">
-            <i class="fas fa-database"></i>
+            <i class="fas fa-eye"></i>
           </div>
-          <h3>Data Engineering & Analytics</h3>
-          <p>I design and implement robust data pipelines and create insightful visualizations for business intelligence.</p>
+          <h3>Computer Vision & NLP</h3>
+          <p>I develop CV and NLP systems for image analysis, segmentation, and language understanding.</p>
           <ul class="skill-list">
-            <li>MS SQL Server & MySQL</li>
-            <li>Snowflake & BigQuery</li>
-            <li>Tableau & PowerBI</li>
-            <li>PySpark & Vertex AI</li>
-            <li>Pandas & NumPy</li>
-            <li>Data Pipeline Design</li>
+            <li>OpenCV & Semantic Segmentation</li>
+            <li>CRF & ResNet</li>
+            <li>CNNs & Transformers</li>
+            <li>RNN/LSTM/GRU & Seq2Seq</li>
+            <li>Attention Mechanisms</li>
+            <li>Image Classification</li>
           </ul>
         </div>
         <div class="skill-card animate delay-2">
           <div class="skill-icon">
-            <i class="fas fa-chart-line"></i>
+            <i class="fas fa-database"></i>
           </div>
-          <h3>Data Visualization & Business Intelligence</h3>
-          <p>I create compelling visualizations and interactive dashboards that drive data-driven decision making.</p>
+          <h3>Data Engineering & Analytics</h3>
+          <p>I design data pipelines and create actionable dashboards for business intelligence.</p>
           <ul class="skill-list">
-            <li>Tableau Dashboards</li>
-            <li>Plotly & Matplotlib</li>
-            <li>Streamlit Applications</li>
-            <li>Seaborn & OpenCV</li>
-            <li>Statistical Analysis</li>
-            <li>Business Intelligence</li>
+            <li>SQL & Snowflake</li>
+            <li>ETL & Pandas</li>
+            <li>Tableau & Power BI</li>
+            <li>Streamlit & Flask</li>
+            <li>Docker & Git</li>
+            <li>CI/CD Pipelines</li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="experience">
+    <div class="section-title">
+      <h2>Education</h2>
+      <p>My academic background and qualifications in technology and artificial intelligence</p>
+    </div>
+
+    <div class="experience-container">
+      <!-- M.S. Artificial Intelligence -->
+      <div class="experience-card">
+        <div class="experience-header">
+          <div class="role-info">
+            <h3>M.S. Artificial Intelligence (Part-Time)</h3>
+            <div class="company-name">Nanyang Technological University, Singapore</div>
+            <div class="date-location">2025 – 2027 (Expected)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- B.E. Information Science -->
+      <div class="experience-card">
+        <div class="experience-header">
+          <div class="role-info">
+            <h3>B.E. Information Science</h3>
+            <div class="company-name">Ramaiah Institute of Technology, India</div>
+            <div class="date-location">2016 – 2020</div>
+          </div>
         </div>
       </div>
     </div>
@@ -285,30 +330,29 @@
     <div class="container">
       <div class="section-title">
         <h2>My Projects</h2>
-        <p>Here you will find some of the personal and client projects that I created with each project containing its own case study</p>
+        <p>Here you will find some of my technical projects showcasing LLM research, computer vision, and production ML systems</p>
       </div>
       <div class="projects-grid">
         <div class="project-card animate">
           <div class="project-image">
             <img
               src="assets/space-shuttle-launch.webp"
-              alt="SpaceX Falcon 9 Landing Prediction"
+              alt="LLM Council Multi-Agent Medical QA"
             />
           </div>
           <div class="project-content">
-            <h3 class="project-title">SpaceX Falcon 9 Landing Prediction</h3>
+            <h3 class="project-title">LLM Council - Multi-Agent Medical QA</h3>
             <p class="project-description">
-              Machine learning project analyzing 90+ launch records to predict first stage landing success with 83% accuracy. Features interactive
-              dashboard for stakeholder exploration.
+              Multi-agent debate framework with Generator-Skeptic-Judge and Angel-Devil architectures. Adversarial reasoning where agents challenge outputs: 94% MMLU accuracy, 67% PubMedQA, outperforming fine-tuned PubMedBERT through ensemble reasoning.
             </p>
             <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">Machine Learning</span>
-              <span class="project-tag">Data Analysis</span>
-              <span class="project-tag">Dashboard</span>
+              <span class="project-tag">LLM</span>
+              <span class="project-tag">Multi-agent</span>
+              <span class="project-tag">Medical AI</span>
+              <span class="project-tag">Ensemble</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+              <a href="https://github.com/rashmikbhat/LLM-Council" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
             </div>
           </div>
         </div>
@@ -316,44 +360,108 @@
           <div class="project-image">
             <img
               src="assets/plant-disease-detector.webp"
-              alt="Plant Disease Detection Neural Network"
+              alt="PRISM AI Platform"
             />
           </div>
           <div class="project-content">
-            <h3 class="project-title">Plant Disease Detector</h3>
+            <h3 class="project-title">PRISM AI Platform</h3>
             <p class="project-description">
-              CNN-based machine learning model achieving 94% accuracy in detecting plant diseases from leaf images. Features intuitive interface making
-              ML outputs accessible to non-technical users.
+              Claude Sonnet 4 LLM chatbot on AWS Bedrock for NPI inventory optimization with Snowflake ETL pipeline. Reduced unconsumed inventory by 30%, preventing COGS exposure. Production system delivering real-time demand-to-inventory matching.
             </p>
             <div class="project-tags">
-              <span class="project-tag">TensorFlow</span>
-              <span class="project-tag">CNN</span>
-              <span class="project-tag">Image Processing</span>
-              <span class="project-tag">Python</span>
+              <span class="project-tag">LLM</span>
+              <span class="project-tag">AWS Bedrock</span>
+              <span class="project-tag">Snowflake</span>
+              <span class="project-tag">Production ML</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/rashmikbhat/Plant-disease-detector" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+              <span class="project-link" style="color: #666; cursor: default;"><i class="fas fa-lock"></i> Internal Project</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card animate delay-2">
+          <div class="project-image">
+            <img src="./assets/hands-background.png" alt="LLM Forgetting Research" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">LLM Forgetting & Fine-Tuning Strategies</h3>
+            <p class="project-description">
+              Systematic analysis of catastrophic forgetting in parameter-efficient fine-tuning (LoRA, Adapters, Prefix Tuning) on GPT-2 and 1B+ param models. 10-20% experience replay reverses forgetting by 33%, enabling continual learning in LLMs.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">LoRA</span>
+              <span class="project-tag">Fine-tuning</span>
+              <span class="project-tag">LLM</span>
+              <span class="project-tag">Research</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rashmikbhat/LLM-Forgetting" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card animate">
+          <div class="project-image">
+            <img
+              src="assets/space-shuttle-launch.webp"
+              alt="Semantic Segmentation"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Semantic Segmentation - Piecewise Training</h3>
+            <p class="project-description">
+              CRF-based segmentation in PyTorch on Pascal VOC, COCO, NYUDv2 datasets. Piecewise training improved IoU and pixel accuracy, applying conditional random fields for structured prediction in computer vision.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">PyTorch</span>
+              <span class="project-tag">Computer Vision</span>
+              <span class="project-tag">Segmentation</span>
+              <span class="project-tag">CRF</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rashmikbhat/Semantic-Segmentation" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card animate delay-1">
+          <div class="project-image">
+            <img
+              src="assets/plant-disease-detector.webp"
+              alt="Parameter-Efficient Fine-Tuning"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Parameter-Efficient Fine-Tuning of LLMs</h3>
+            <p class="project-description">
+              Comparative evaluation of LoRA vs. AdapterP on OpenLLaMA-3B and TinyLlama-1.1B for mathematical reasoning. Quantified capacity constraints: LoRA 4.5% accuracy advantage, demonstrating efficiency-performance tradeoffs.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">LoRA</span>
+              <span class="project-tag">Adapters</span>
+              <span class="project-tag">Efficiency</span>
+              <span class="project-tag">Benchmarking</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rashmikbhat/PEFT-LLMs" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
             </div>
           </div>
         </div>
         <div class="project-card animate delay-2">
           <div class="project-image donit-project">
-            <img src="./assets/hands-background.png" alt="DonateIt Donation Platform Background" class="hands-bg" />
-            <img src="./assets/donit-text.png" alt="DonateIt Logo" class="donit-logo" />
+            <img src="./assets/donit-text.png" alt="SEM Ridge Analyzer" />
           </div>
           <div class="project-content">
-            <h3 class="project-title">DonateIt - Donation Platform</h3>
+            <h3 class="project-title">SEM Ridge Analyzer for Semiconductor</h3>
             <p class="project-description">
-              Android application connecting 500+ donors with organizations through real-time Firebase integration. Implements geospatial analysis using Google Maps API for proximity-based matching.
+              Computer vision tool for automated SEM metrology using 1D projection analysis and OCR. Automated measurement extraction from scanning electron microscope images for semiconductor quality control.
             </p>
             <div class="project-tags">
-              <span class="project-tag">Android</span>
-              <span class="project-tag">Firebase</span>
-              <span class="project-tag">Google Maps API</span>
-              <span class="project-tag">Java</span>
+              <span class="project-tag">Computer Vision</span>
+              <span class="project-tag">OCR</span>
+              <span class="project-tag">Manufacturing</span>
+              <span class="project-tag">Automation</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/rashmikbhat/DonIt_Layout" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+              <a href="https://github.com/rashmikbhat/SEM-Ridge-Analyzer" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
             </div>
           </div>
         </div>

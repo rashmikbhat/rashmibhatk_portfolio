@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const typed = new Typed(".typed-text", {
     strings: [
       "a Data Scientist",
-      "an AI Engineer",
-      "a Problem Solver",
-      "an Analytics Expert"
+      "an ML Engineer",
+      "an AI Researcher",
+      "an LLM Specialist"
     ],
     typeSpeed: 80,
     backSpeed: 50,
